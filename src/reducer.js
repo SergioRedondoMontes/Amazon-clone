@@ -4,12 +4,12 @@ export const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "ADD_TO_BASCKET":
+    case "ADD_TO_BASKET":
       console.log(action);
       // logic for adding item
       return {
         ...state,
-        bascket: [...state.bascket, action.item],
+        basket: [...state.basket, action.item],
       };
     default:
       return state;
